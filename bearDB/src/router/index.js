@@ -15,12 +15,27 @@ const router = createRouter({
 
             component: () =>
                 import ('../views/AboutView.vue')
-        }, {
+        },
+        {
+            path: '/app',
+            name: 'app',
+
+            component: () =>
+                import ('../views/DashboardView.vue')
+        },
+        {
             path: '/auth',
             name: 'auth',
 
             component: () =>
                 import ('../views/AuthView.vue')
+        }, {
+            path: '/app/:project',
+            name: 'project',
+            props: { project: ':project' },
+
+            component: () =>
+                import ('../views/AppView.vue')
         }
 
 
