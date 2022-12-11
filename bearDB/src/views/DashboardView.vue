@@ -100,7 +100,7 @@ methods:{
                 </newprbtn>
             </div>
             <div class="project-sec-body">
-                <small class="hwm">10 Projects</small>
+                <small class="hwm">{{projectlist.length}} Projects</small>
                 <div class="project-body">
                 
                   
