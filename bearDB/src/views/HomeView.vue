@@ -41,8 +41,11 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
       <a href="/docs" class="active">
         Docs
       </a>
-      <a href="/Contact">
+      <a href="/contact">
        Contact
+      </a>
+      <a href="/donate">
+       Donate
       </a>
     </div>
  
@@ -53,6 +56,12 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
     <div class="item">
       <b>Getting Started</b>
       <ul>
+        <a href="#introduction">
+          <li>
+
+Introduction
+</li>
+        </a>
         <a href="#requirements">
           <li>
 
@@ -107,6 +116,25 @@ Requirements
   </div>
   </div>
   <div class="app">
+    <div id="introduction">
+      <h1>Introduction</h1>
+  
+
+      <p>Beardb is a database system that implements encrypted versions of JSON data, making it easy to access, manage, and deploy remotely. With Beardb, you can securely store and manage your data without worrying about unauthorized access. The system is designed to be user-friendly and easy to set up, even for users with limited technical experience.
+
+
+</p><p>        To deploy Beardb on a remote server, you will need to have access to a server that meets the system's requirements. These requirements include a Linux-based operating system, a minimum of 4GB of RAM, and at least 10GB of free storage space. Once you have a suitable server, you can download and install the Beardb software and follow the provided instructions to set up the database.
+
+ </p> <p> Once Beardb is up and running on your remote server, you can easily manage your data using the system's intuitive interface. You can create, read, update, and delete records as needed, and access your data from any device with an internet connection. The system's encryption features ensure that your data remains secure, even when accessed remotely.
+
+ </p> <p> Overall, Beardb is a powerful and flexible database system that makes it easy to manage and access your data, even when working remotely. Whether you're a small business owner, a developer, or just someone looking for a secure and easy-to-use database solution, Beardb has you covered.
+
+ </p> <p>Database system implementing encrypted versions JSON of data. Easy to access, manage and deploy remotely.
+      </p>
+      
+
+    </div>
+
     <div class="requirements" id="requirements">
       <h1>Requirements</h1>
       <p>
