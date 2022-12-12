@@ -31,7 +31,7 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
    <nav>
     <div class="logo">
       <img src='../assets/logo.png' alt="BearDB Logo">
-      <label for="">Beardb</label>
+      <label for="">BearDB </label>
     </div>
 
     <div class="nav-items">
@@ -60,6 +60,12 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
           <li>
 
 Introduction
+</li>
+        </a>
+        <a href="#sourcecode">
+          <li>
+
+Source Code
 </li>
         </a>
         <a href="#requirements">
@@ -107,10 +113,34 @@ Requirements
         </a>
         <a href="#updatedata">
           <li>
-          Update Data
+          Update Data with Query
           </li>
         </a>
-       
+        <a href="#updatedataid">
+          <li>
+          Update Data with ID
+          </li>
+        </a>
+        <a href="#fetchdata">
+          <li>
+          Fetch Data with Query
+          </li>
+        </a>
+        <a href="#fetchdataid">
+          <li>
+          Fetch Data with ID
+          </li>
+        </a>
+        <a href="#deletedata">
+          <li>
+          Delete Data with Query
+          </li>
+        </a>
+        <a href="#deletedataid">
+          <li>
+          Delete Data with ID
+          </li>
+        </a>
     </ul>
     </div>
   </div>
@@ -120,7 +150,7 @@ Requirements
       <h1>Introduction</h1>
   
 
-      <p>Beardb is a database system that implements encrypted versions of JSON data, making it easy to access, manage, and deploy remotely. With Beardb, you can securely store and manage your data without worrying about unauthorized access. The system is designed to be user-friendly and easy to set up, even for users with limited technical experience.
+      <p>BearDB  is a database system that implements encrypted versions of JSON data, making it easy to access, manage, and deploy remotely. With Beardb, you can securely store and manage your data without worrying about unauthorized access. The system is designed to be user-friendly and easy to set up, even for users with limited technical experience.
 
 
 </p><p>        To deploy Beardb on a remote server, you will need to have access to a server that meets the system's requirements. These requirements include a Linux-based operating system, a minimum of 4GB of RAM, and at least 10GB of free storage space. Once you have a suitable server, you can download and install the Beardb software and follow the provided instructions to set up the database.
@@ -134,6 +164,28 @@ Requirements
       
 
     </div>
+  <div id="sourcecode">
+<h1>Source Code</h1>
+<div class="sourcelinks">
+
+  <a target="_blank" href="https://pypi.org/project/Beardb/">
+
+    <i class='bx bxs-package'></i>
+<label for="" class="ml-3"> BearDB Python Package</label>
+</a>
+  <a target="_blank" href="https://github.com/teddyoweh/beardb">
+
+  <i class='bx bxl-github'></i>
+  <label for="" class="ml-3"> BearDB Source Code</label>
+  </a>
+  <a  target="_blank" href="https://github.com/teddyoweh/beardb-api">
+
+<i class='bx bxl-github'></i>
+<label for="" class="ml-3"> BearDB  API Source Code</label>
+</a>
+</div>
+
+  </div>
 
     <div class="requirements" id="requirements">
       <h1>Requirements</h1>
@@ -306,9 +358,9 @@ Python 3.6 or higher
 
 </div>  
 
-<div class="updatedatawithid mt-4" id="updatedatawithid">
+<div class="updatedataid mt-4" id="updatedataid">
 
-<h1>Update Data With</h1>
+<h1>Update Data With ID</h1>
 <p>
   To update data with id, you need to write the following code in your python script:
 </p>
@@ -335,6 +387,111 @@ Python 3.6 or higher
 
         
 </div>
+
+<div id="fetchdata" class="mt-4">
+  
+  <h1>Fetch Data With Query</h1>
+  <p>
+    To fetch data with query, you need to write the following code in your python script:
+  </p>
+
+  <code>
+  <div class="top">
+    <i @click="copytoclipboard" class='bx bx-copy
+    '></i>
+    </div>
+
+    <div class="textarea">
+      
+        <label for="">
+          users.<span class="function">fetchData</span>(query<span class="var">={'name':'John Doe'}</span>)
+        
+          </label>
+         
+
+  
+     
+          </div>
+</code>
+  
+</div>
+<div id="fetchdataid" class="mt-4">
+
+  <h1>Fetch Data With ID</h1>
+  <p>
+    To fetch data with ID you need to write the following code in your python script:
+  </p>
+  <code>
+  <div class="top">
+    <i @click="copytoclipboard" class='bx bx-copy
+    '></i>
+    </div>
+
+    <div class="textarea">
+        
+          <label for="">
+            users.<span class="function">fetchbyID</span>(id<span class="var">='ae0ca44e-5301-11ed-8d24-a6bd5a94b3a6'</span>)
+          
+            </label>
+          
+  
+    
+      
+            </div>
+  </code>
+
+  </div>
+<div id="deletedata" class="mt-4">
+  <h1>Delete Data With Query</h1>
+  <p>
+    To delete the data with Query you need to write the following code in your python script:
+  </p>
+  <code>
+  <div class="top">
+    <i @click="copytoclipboard" class='bx bx-copy
+    '></i>
+    </div>
+
+    <div class="textarea">
+        
+          <label for="">
+            users.<span class="function">delete</span>(query<span class="var">={'name':'John Doe'}</span>)
+          
+            </label>
+          
+  
+    
+      
+            </div>
+  </code>
+  </div>
+<div id="deletedataid" class="mt-4">
+  <h1>Delete Data With ID</h1>
+  <p>
+    To delete the data with ID you need to write the following code in your python script:
+  </p>
+  <code>
+  <div class="top">
+    <i @click="copytoclipboard" class='bx bx-copy
+    '></i>
+    </div>
+
+    <div class="textarea">
+
+      <label for="">
+        users.<span class="function">deletebyId</span>(id<span class="var">='ae0ca44e-5301-11ed-8d24-a6bd5a94b3a6'</span>)
+      
+        </label>
+      
+
+  
+ 
+      </div>
+  </code>
+  </div>
+
+
+
     </div>
 </div>
 <div id="snackbar">
@@ -346,6 +503,26 @@ Python 3.6 or higher
 </template>
 
 <style lang="scss">
+.sourcelinks{
+padding: 10px;
+  display: flex;
+  flex-direction: column;
+  a{margin-bottom: 3%;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    color: #049464;
+    &:hover{
+      color: #03bd7e;
+    }
+  }
+  label{
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
 nav{
   display: flex;
   flex-direction: row;
@@ -444,6 +621,7 @@ flex-direction: row;
   .side-nav{
     padding: 20px;
     height: 100vh;
+    overflow-y: scroll;
     width: 20%;
     background-color: #1e1e1e;
     position: fixed;
