@@ -1,7 +1,8 @@
 <script >
 import TheWelcome from '../components/TheWelcome.vue'
 import Auth from '../components/Auth.vue'
-
+import NavBar from './Nav.vue'
+import logo from '../assets/logo.png'
 export default {
   
 
@@ -25,8 +26,27 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 </script>
 
 <template>
+
   <main>
-    
+   <nav>
+    <div class="logo">
+      <img src='../assets/logo.png' alt="BearDB Logo">
+      <label for="">Beardb</label>
+    </div>
+
+    <div class="nav-items">
+      <a href="/">
+        Home
+      </a>
+      <a href="/docs" class="active">
+        Docs
+      </a>
+      <a href="/Contact">
+       Contact
+      </a>
+    </div>
+ 
+   </nav>
 <div class="app-container">
   <div class="side-nav">
   <div class="items">
@@ -74,6 +94,11 @@ Requirements
         <a href="#insertdata">
           <li>
           Insert Data
+          </li>
+        </a>
+        <a href="#updatedata">
+          <li>
+          Update Data
           </li>
         </a>
        
@@ -225,7 +250,63 @@ Python 3.6 or higher
 
   </div>
 
+  <div class="updatedata mt-4" id="updatedata">
+    <h1>Update Data </h1>
+    <p>
+      To update data, you need to write the following code in your python script:
+    </p>
 
+
+    <code>
+      <div class="top">
+        <i @click="copytoclipboard" class='bx bx-copy
+        '></i>
+        </div>
+
+        <div class="textarea">
+          
+            <label for="">
+              users.<span class="function">update</span>(data<span class="var">={'name':'John Doe', 'age': 20}</span>, query<span class="var">={'name':'John Doe'}</span>)
+            
+              </label>
+
+    </div>
+              </code>
+    
+        
+
+
+</div>  
+
+<div class="updatedatawithid mt-4" id="updatedatawithid">
+
+<h1>Update Data With</h1>
+<p>
+  To update data with id, you need to write the following code in your python script:
+</p>
+
+
+<code>
+  <div class="top">
+    <i @click="copytoclipboard" class='bx bx-copy
+    '></i>
+    </div>
+
+    <div class="textarea">
+      
+        <label for="">
+          users.<span class="function">updatebyId</span>(data<span class="var">={'name':'John Doe', 'age': 20}</span>, id<span class="var">='ae0ca44e-5301-11ed-8d24-a6bd5a94b3a6'</span>)
+        
+          </label>
+         
+
+  
+     
+          </div>
+        </code>
+
+        
+</div>
     </div>
 </div>
 <div id="snackbar">
@@ -237,6 +318,52 @@ Python 3.6 or higher
 </template>
 
 <style lang="scss">
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #181818;
+    width: 100%;
+    z-index: 2;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0px 0px 1px;
+    border-color: #2e2e2e;
+    top: 0;
+    position: sticky;
+    .nav-items{
+      width: 24%;
+    display: flex;
+    justify-content: space-evenly;
+      a{
+        transition: 0.3s;
+        margin-right: 4%;
+        color: #fff;
+        &.active{
+          color: #03bd7e;
+        }
+        &:hover{
+          transition: 0.3s;
+          color: #03bd7e;
+        }
+      }
+    }
+    .logo{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      label{
+        color: #03bd7e;
+        font-size: 600;
+      }
+      img{
+        height: 40px;
+    width: 40px;
+    object-fit: cover;
+      }
+    }
+}
 code{
   .top{
   
@@ -288,13 +415,10 @@ display: flex;
 flex-direction: row;
   .side-nav{
     padding: 20px;
-    width: 20%;
     height: 100vh;
+    width: 20%;
     background-color: #1e1e1e;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    position: fixed;
     .items{
       .item{
 margin-bottom: 4%;
@@ -323,7 +447,7 @@ margin-bottom: 4%;
     }
   }
   .app{
-
+    margin-left: 20%;
     width: 80%;
     padding: 10px 36px;
 
@@ -335,6 +459,7 @@ margin-bottom: 4%;
     display: none;
   }
   .app{
+    margin-left: 0!important;
     width: 100% !important;
   }
 }
