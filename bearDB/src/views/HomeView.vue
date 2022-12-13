@@ -661,6 +661,11 @@ margin-bottom: 4%;
   }
 }
 @media screen and (max-width:768px) {
+  nav{
+    .nav-items{
+      width: 52% !important;
+    }
+  }
   .side-nav{
     display: none;
   }
@@ -670,22 +675,18 @@ margin-bottom: 4%;
   }
 }
 #snackbar {
-  visibility: hidden; /* Hidden by default. Visible on click */
-  min-width: 250px; /* Set a default minimum width */
-  margin-left: -125px; /* Divide value of min-width by 2 */
- /* Black background color */
- /* White text color */
-  text-align: center; /* Centered text */
-  border-radius: 2px; /* Rounded borders */
- /* Padding */
-  position: fixed; /* Sit on top of the screen */
-  // z-index: 1; /* Add a z-index if needed */
-  // left: 50%; /* Center the snackbar */
-  right:30px;
-  top: 30px; /* 30px from the bottom */
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px;  
+
+  text-align: center;  
+  border-radius: 2px;  
+ 
+  position: fixed; 
+  right:30px;  
 }
 
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
+ 
 #snackbar.show {
   visibility: visible; /* Show the snackbar */
   /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
