@@ -35,10 +35,8 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
     </div>
 
     <div class="nav-items">
-      <a href="/">
-        Home
-      </a>
-      <a href="/docs" class="active">
+       
+      <a href="/" class="active">
         Docs
       </a>
       <a href="/contact">
