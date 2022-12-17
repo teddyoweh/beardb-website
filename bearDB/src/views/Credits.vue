@@ -31,6 +31,21 @@
 
 
 <style lang="scss">
+@media  screen and (max-width: 768px) {
+    .info{
+        padding: 50px 0px !important;;
+    }
+    .credit-who{
+     
+    display: flex;
+    flex-direction: column !important;
+        img{
+            width: 290px !important;;
+    height: 300px !important;;
+        }
+    }
+    
+}
 .credit-who{
     display: flex;
     flex-direction: row;
