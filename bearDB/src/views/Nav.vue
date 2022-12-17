@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 export default{
-    
+
 data() {
     console.log('dsds',this.$router.currentRoute.value.path)
     return{
@@ -49,7 +49,7 @@ data() {
         Support
       </a>
     </router-link>
-    <router-link to="/">
+    <router-link to="/credits">
       <a href="/credits">
        Credits
       </a>
