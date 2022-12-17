@@ -9,15 +9,15 @@
         <img src="../assets/teddy.jpeg" alt="">
         <div class="info">
 
-       <a href=""> <h1>Teddy Oweh</h1></a>
+       <a href="https://teddyoweh.net"> <h1>Teddy Oweh</h1></a>
         <h5>Software Engineer (ML), Network & DevOps Engineer </h5>
         <p> After successfully implementing a facial recognition and fingerprint door control system for my dorm, I realized that there was a need for a local server and database system(in case of the remote server fails) and a remote server and database system to store the facial landmarks, which is sent back and forth from the Raspberry PI4 micro-controller and monitor access to the server infrastructure. This conclusion highlights the technical process and motivation leading to the development of  <a href="https://beardb.net">BearDB</a> . </p>
         <div class="socials">
         <a href="https://github.com/teddyoweh"><i class="bx bxl-github"></i> </a>
-        <a href=""><i class="bx bxl-linkedin"></i> </a>
-        <a href=""><i class="bx bxl-twitter"></i> </a>
-        <a href=""><i class="bx bx-globe"></i> </a>
-        <a href=""><i class="bx bx-envelope"></i> </a>
+        <a href="https://www.linkedin.com/in/teddyoweh/"><i class="bx bxl-linkedin"></i> </a>
+        <a href="https://twitter.com/tedddyoweh"><i class="bx bxl-twitter"></i> </a>
+        <a href="https://teddyoweh.net"><i class="bx bx-globe"></i> </a>
+        <a href="mailto:teddy@teddyoweh.net"><i class="bx bx-envelope"></i> </a>
 
 
         </div>
