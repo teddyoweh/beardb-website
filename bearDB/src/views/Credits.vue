@@ -52,10 +52,11 @@
     align-items: flex-start;
     width: 100%;
     img{
-        width: 390px;
-    height: 400px;
+        width: 200%;
+    height: 471px;
     object-fit: cover;
     border-radius: 6px;
+  
     }
     .info{
         padding: 10px 50px;
