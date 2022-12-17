@@ -28,26 +28,7 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 <template>
 
   <main>
-   <nav>
-    <div class="logo">
-      <img src='../assets/logo.png' alt="BearDB Logo">
-      <label for="">BearDB </label>
-    </div>
-
-    <div class="nav-items">
-       
-      <a href="/" class="active">
-        Docs
-      </a>
-      <a href="/contact">
-       Contact
-      </a>
-      <a href="/donate">
-       Donate
-      </a>
-    </div>
- 
-   </nav>
+   
 <div class="app-container">
   <div class="side-nav">
   <div class="items">
@@ -153,7 +134,7 @@ Requirements
 
 </p><p>        To deploy Beardb on a remote server, you will need to have access to a server that meets the system's requirements. These requirements include a Linux-based operating system, a minimum of 4GB of RAM, and at least 10GB of free storage space. Once you have a suitable server, you can download and install the Beardb software and follow the provided instructions to set up the database.
 
- </p> <p> Once Beardb is up and running on your remote server, you can easily manage your data using the system's intuitive interface. You can create, read, update, and delete records as needed, and access your data from any device with an internet connection. The system's encryption features ensure that your data remains secure, even when accessed remotely.
+ </p> <p> Once Beardb is up and running on your remote server, you can easily manage your data using the microservice system. You can create, read, update, and delete records as needed, and access your data from any device with an internet connection. The system's encryption features ensure that your data remains secure, even when accessed remotely.
 
  </p> <p> Overall, Beardb is a powerful and flexible database system that makes it easy to manage and access your data, even when working remotely. Whether you're a small business owner, a developer, or just someone looking for a secure and easy-to-use database solution, Beardb has you covered.
 
@@ -521,52 +502,7 @@ padding: 10px;
     margin-left: 10px;
   }
 }
-nav{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background: #181818;
-    width: 100%;
-    z-index: 2;
-    padding: 10px;
-    border-style: solid;
-    border-width: 0px 0px 1px;
-    border-color: #2e2e2e;
-    top: 0;
-    position: sticky;
-    .nav-items{
-      width: 24%;
-    display: flex;
-    justify-content: space-evenly;
-      a{
-        transition: 0.3s;
-        margin-right: 4%;
-        color: #fff;
-        &.active{
-          color: #03bd7e;
-        }
-        &:hover{
-          transition: 0.3s;
-          color: #03bd7e;
-        }
-      }
-    }
-    .logo{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      label{
-        color: #03bd7e;
-        font-size: 600;
-      }
-      img{
-        height: 40px;
-    width: 40px;
-    object-fit: cover;
-      }
-    }
-}
+
 code{
   .top{
   
